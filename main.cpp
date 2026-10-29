@@ -13,7 +13,7 @@ struct EndpointStats {
 };
 
 int main() {
-    ifstream file("logs.txt");
+    ifstream file("large_logs.txt");
 
     if (!file.is_open()) {
         cerr << "Error: Cannot open logs.txt" << endl;

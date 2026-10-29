@@ -2,3 +2,5 @@
 main
 *.o
 logs.txt
+large_logs.txt
+difficult_logs.txt
