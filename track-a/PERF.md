@@ -51,3 +51,18 @@ and are not an isolated measurement of the application inside the container.
 
 These are local test measurements, not official benchmark results.
 Official benchmark scoring and performance should be measured separately.
+## Docker Performance Test
+
+Environment: macOS with Docker Desktop
+
+Input: data/requests.log (148 MiB)
+
+| Metric | Result |
+|---|---:|
+| Docker execution time (real) | 0.65 seconds |
+| User CPU time | 0.02 seconds |
+| System CPU time | 0.04 seconds |
+| Maximum resident set size | 32,997,376 bytes (~31.47 MiB) |
+| Peak memory footprint | 15,057,592 bytes (~14.36 MiB) |
+
+Note: Measurements were collected using macOS /usr/bin/time -l around the Docker invocation. They include Docker overhead and are not isolated container resource measurements. The input is a local test dataset, not the official benchmark dataset.
